@@ -1,0 +1,79 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.grid {
+  width: 100%; }
+
+.row {
+  margin-bottom: 1em; }
+
+.row:last-child {
+  margin-bottom: 0; }
+
+.grid, .row, [class*="-col"] {
+  padding: 0;
+  margin: 0; }
+
+.grid:after, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="-col"] {
+  float: left;
+  margin-right: 0.5%; }
+
+[class*="-col"]:last-child {
+  margin-right: 0; }
+
+.twelve-col {
+  width: 100%; }
+
+.eleven-col {
+  width: 91.62%; }
+
+.ten-col {
+  width: 83.25%; }
+
+.nine-col {
+  width: 74.87%; }
+
+.eight-col {
+  width: 66.5%; }
+
+.seven-col {
+  width: 58.12%; }
+
+.six-col {
+  width: 49.75%; }
+
+.five-col {
+  width: 41.37%; }
+
+.four-col {
+  width: 33%; }
+
+.three-col {
+  width: 24.62%; }
+
+.two-col {
+  width: 16.25%; }
+
+.one-col {
+  width: 7.875%; }
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; } }
+@media only screen and (max-width: 480px) {
+  .span_12_of_12, .span_11_of_12, .span_10_of_12, .span_9_of_12, .span_8_of_12, .span_7_of_12, .span_6_of_12, .span_5_of_12, .span_4_of_12, .span_3_of_12, .span_2_of_12, .span_1_of_12 {
+    width: 100%; } }
+.container {
+  width: 1196px;
+  margin: 0 auto; }
+
+h1 {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
