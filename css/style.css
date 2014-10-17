@@ -114,11 +114,32 @@ html, html a {
     width: 100%; } }
 .container {
   width: 1196px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 body {
   color: #fff;
   background-color: #000; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.facebook i {
+  color: #3B5998; }
+
+.twitter i {
+  color: #4099FF; }
+
+.email i {
+  color: #f39c12; }
+
+.facebook i:hover,
+.twitter i:hover,
+.email i:hover {
+  color: #a8f285; }
 
 header {
   z-index: 5;
@@ -146,22 +167,12 @@ header {
       text-decoration: none; }
       header nav li a:hover {
         color: #a8f285; }
-  header nav .facebook i {
-    color: #3B5998; }
-  header nav .twitter i {
-    color: #4099FF; }
-  header nav .email i {
-    color: #f39c12; }
-  header nav .facebook i:hover,
-  header nav .twitter i:hover,
-  header nav .email i:hover {
-    color: #a8f285; }
 
 main {
   width: 100%;
   z-index: 1;
   margin-top: 0;
-  padding-top: 150px; }
+  padding-top: 135px; }
   main .artwork-container {
     margin-top: 10px; }
   main .artwork-box {
@@ -195,5 +206,27 @@ main {
   main .artwork-description {
     color: #bbb;
     margin-bottom: 15px; }
+
+footer {
+  position: relative;
+  margin: 20px 0;
+  padding: 40px 0.3%;
+  text-transform: uppercase; }
+  footer .container {
+    border-top: 1px solid #fff; }
+  footer .right {
+    float: right;
+    text-align: right;
+    padding-top: 70px;
+    font-size: 0.9em; }
+  footer h3, footer .copywright {
+    color: #bbb; }
+  footer a {
+    text-decoration: none;
+    color: #fff; }
+  footer .social i {
+    margin: 12px; }
+    footer .social i:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
