@@ -32,7 +32,9 @@ table {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1em; }
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 400; }
 
 html, html a {
   -webkit-font-smoothing: antialiased;
@@ -61,7 +63,8 @@ html, html a {
 
 [class*="-col"] {
   float: left;
-  margin-right: 0.5%; }
+  margin-left: 0.3%;
+  margin-right: 0.3%; }
 
 [class*="-col"]:last-child {
   margin-right: 0; }
@@ -112,5 +115,41 @@ html, html a {
 .container {
   width: 1196px;
   margin: 0 auto; }
+
+body {
+  color: #fff;
+  background-color: #000; }
+
+header {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 45px;
+  padding-bottom: 1px;
+  text-align: center;
+  background-color: #000; }
+  header .container {
+    border-bottom: 1px solid #fff; }
+  header h1 {
+    font-size: 2em;
+    line-height: 2; }
+  header nav li {
+    display: inline-block;
+    margin: 0 12px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase; }
+    header nav li a {
+      color: #fff;
+      text-decoration: none; }
+      header nav li a:hover {
+        color: #a8f285; }
+
+main {
+  width: 100%;
+  z-index: 1;
+  margin-top: 0;
+  padding-top: 150px; }
 
 /*# sourceMappingURL=style.css.map */
