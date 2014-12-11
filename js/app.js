@@ -39,6 +39,11 @@ $(document).ready(function() {
             });
         }
 
+        function insertHtml(items) {
+            var galltemp = 'hello'
+            $('#gallery').html(galltemp)
+        }
+
     }
 
 
