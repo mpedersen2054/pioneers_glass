@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var $this = $(this);
 
     var clientId = 'dec355921049a2b';
     $.ajaxSetup({
@@ -9,7 +10,6 @@ $(document).ready(function() {
 
     $.getJSON('https://api.imgur.com/3/account/patmedersen/album/6ZEqg/title',
         function(results) {
-            console.log(results)
             manipulateData(results.data.images);
         }
     );
@@ -38,13 +38,32 @@ $(document).ready(function() {
                 return a.title - b.title
             });
         }
-
-        function insertHtml(items) {
-            var galltemp = 'hello'
-            $('#gallery').html(galltemp)
-        }
-
     }
 
+    function insertHtml(items) {
+    }
+
+
+
+
+
+    // App Animations
+    
+    $('.artwork-box').hover(
+        function() {
+            console.log('hello')
+            $this.find('.artwork-meta')
+                .css({
+                    'background-color': 'yellow'
+                })
+        },
+        function() {
+            console.log('bye')
+            $this.find('.artwork-meta')
+                .css({
+                    'background-color': 'red'
+                })
+        }
+    );
 
 });
