@@ -48,9 +48,7 @@ function insertHtml(items) {
 $('.artwork-image').hover(
     function() {
         $(this)
-            .find($('img'))
-                .addClass('blur')
-            .end()
+            .find($('img')).addClass('blur').end()
             .find($('.artwork-meta'))
                 .animate({
                     height: '+=164px',
@@ -59,9 +57,7 @@ $('.artwork-image').hover(
     },
     function() {
         $(this)
-            .find($('img'))
-                .removeClass('blur')
-            .end()
+            .find($('img')).removeClass('blur').end()
             .find($('.artwork-meta'))
                 .animate({
                     height: '-=164px',
