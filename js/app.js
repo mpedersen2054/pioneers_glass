@@ -51,18 +51,18 @@ $(document).ready(function() {
     
     $('.artwork-box').hover(
         function() {
-            console.log('hello')
-            $this.find('.artwork-meta')
+            $(this).find($('.artwork-meta'))
                 .css({
-                    'background-color': 'yellow'
-                })
+                    'background-color': 'rgba(0,0,0,0.2)',
+                    'height': '200px'
+                });
         },
         function() {
-            console.log('bye')
-            $this.find('.artwork-meta')
+            $(this).find($('.artwork-meta'))
                 .css({
-                    'background-color': 'red'
-                })
+                    'background-color': 'rgba(0,0,0,0.4)',
+                    'height': '36px'
+                });
         }
     );
 
