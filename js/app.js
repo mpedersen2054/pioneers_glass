@@ -15,6 +15,8 @@ $.getJSON('https://api.imgur.com/3/account/patmedersen/album/6ZEqg/title',
 
 function manipulateData(data) {
 
+    // find by a-z, artist, date
+
     var alphaData = sortByTitle(data);
     insertHtml(alphaData);
 
@@ -52,7 +54,8 @@ $('.artwork-image').hover(
             .find($('.artwork-meta'))
                 .animate({
                     height: '+=164px',
-                    fontSize: '1em',
+                    fontSize: '1em'
+                    // borderTop: '2p'
                 }, 200);
     },
     function() {
