@@ -45,6 +45,8 @@ function insertHtml(items) {
 }
 
 
+// $('.chosen-select').chosen();
+
 // App Animations
 
 $('.artwork-image').hover(
