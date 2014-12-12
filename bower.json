@@ -1,0 +1,19 @@
+{
+  "name": "pioneers",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mpedersen2054/pioneers_glass",
+  "authors": [
+    "Matt Pedersen <mpedersen2054@gmail.com>"
+  ],
+  "description": "pioneers glass gallery",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
