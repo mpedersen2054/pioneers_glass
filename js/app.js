@@ -45,29 +45,29 @@ function insertHtml(items) {
 }
 
 
-// $('.chosen-select').chosen();
-
 // App Animations
 
 $('.artwork-image').hover(
     function() {
         $(this)
-            .find($('img')).addClass('blur').end()
             .find($('.artwork-meta'))
                 .animate({
-                    height: '+=164px',
-                    fontSize: '1em'
-                    // borderTop: '2p'
-                }, 200);
+                    height: '+=130px',
+                    borderTop: '2px solid #444'
+                }, 200)
+            .find($('.artwork-description'))
+                .show();
+
     },
     function() {
         $(this)
-            .find($('img')).removeClass('blur').end()
             .find($('.artwork-meta'))
                 .animate({
-                    height: '-=164px',
-                    fontSize: '1em',
-                }, 300);
+                    height: '-=130px',
+                    borderTop: '0px solid #444'
+                }, 300)
+            .find($('.artwork-description'))
+                .hide();
     }
 );
 

@@ -8,57 +8,52 @@
 @import 'pieces/main'
 @import 'pieces/footer'
 
-header
-    z-index: 5
-    position: fixed
+main
     width: 100%
-    padding-top: 6px
-    padding-bottom: 1px
-    background-color: #000
-    .container
-        border-bottom: 2px solid rgba(255, 255, 255, 0.8)
+    margin-top: 0
+    padding-top: 135px
 
-    h1
-        font-size: 2em
-        line-height: 2
-        letter-spacing: 2px
-        text-transform: uppercase
-        color: #fff
-        margin-left: 10px
-        margin-bottom: 6px
+    .artwork-image
+        position: relative
+        padding: 2px 2.5px 1px 2.5px
+        background-color: #000
+        margin-bottom: 50px
+        border-radius: 3px
+        -ms-border-radius: 3px
+        -moz-border-radius: 3px
+        -webkit-border-radius: 3px
+        img
+            position: relative
+            border-radius: 3px
+            -ms-border-radius: 3px
+            -moz-border-radius: 3px
+            -webkit-border-radius: 3px
 
-    nav
-        li
-            display: inline-block
-            margin-bottom: 10px
-            font-size: 1em
-            letter-spacing: 2px
-            text-transform: uppercase
-            margin-left: 40px
-            &:first-child
-                margin-left: 10px
-            a
-                color: #fff
-                text-decoration: none
-                &:hover
-                    color: #a8f285 // lgreen
+        .artwork-meta
+            position: absolute
+            bottom: -28px
+            background-color: #ddd
+            color: #fff
+            height: 32px
+            width: 286px
+            border-top: 2px solid #bbb
+            border-radius: 0px 0px 3px 3px
+            -ms-border-radius: 0px 0px 3px 3px
+            -moz-border-radius: 0px 0px 3px 3px
+            -webkit-border-radius: 0px 0px 3px 3px
 
-        .right-menu
-            margin-top: 44px
-            .find-by
-                text-transform: uppercase
-                text-align: right
-                font-size: 0.9em
-                letter-spacing: 1px
-                margin-right: 0
-                color: #a8f285
+    .artwork-title, .artwork-description
+        overflow: hidden
+        line-height: 1.4
+        padding: 1px 8px
 
-            ul
-                margin-top: 10px
-                text-align: right
-                li
-                    font-size: 0.9em
-                    letter-spacing: 1.6px
+    .artwork-description
+        font-size: 0.9em
+        display: none
+        color: #222
+        font-weight: 300
 
-                    .btn i
-                        vertical-align: text-top
+    .artwork-title
+        font-size: 1.2em
+        color: #000
+        font-weight: 400
