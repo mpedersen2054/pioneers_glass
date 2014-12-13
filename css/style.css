@@ -187,10 +187,10 @@ header {
   header nav li {
     display: inline-block;
     margin-bottom: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 40px; }
+    margin-left: 60px; }
     header nav li:first-child {
       margin-left: 10px; }
     header nav li a {
@@ -203,7 +203,7 @@ header {
     header nav .right-menu .find-by {
       text-transform: uppercase;
       text-align: right;
-      font-size: 0.9em;
+      font-size: 1em;
       letter-spacing: 1px;
       margin-right: 0;
       color: #a8f285; }
@@ -265,23 +265,50 @@ main {
       color: #fff;
       height: 32px;
       width: 286px;
-      border-top: 2px solid #bbb;
+      border-top: 1px solid #bbb;
       border-radius: 0px 0px 3px 3px;
       -ms-border-radius: 0px 0px 3px 3px;
       -moz-border-radius: 0px 0px 3px 3px;
       -webkit-border-radius: 0px 0px 3px 3px; }
-  main .artwork-title, main .artwork-description {
-    overflow: hidden;
-    line-height: 1.4;
-    padding: 1px 8px; }
-  main .artwork-description {
-    font-size: 0.9em;
-    display: none;
-    color: #222;
-    font-weight: 300; }
-  main .artwork-title {
-    font-size: 1.2em;
-    color: #000;
-    font-weight: 400; }
+      main .artwork-image .artwork-meta .artwork-title, main .artwork-image .artwork-meta .artwork-description {
+        overflow: hidden;
+        line-height: 1.4;
+        padding: 1px 8px; }
+      main .artwork-image .artwork-meta .artwork-title h3 {
+        font-size: 1.2em;
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 8px; }
+      main .artwork-image .artwork-meta .artwork-description {
+        font-size: 0.8em;
+        display: none;
+        color: #222;
+        font-weight: 300; }
+      main .artwork-image .artwork-meta .artwork-artists {
+        display: none; }
+        main .artwork-image .artwork-meta .artwork-artists .artist {
+          margin-left: 10px;
+          color: #000;
+          font-size: 0.6em; }
+          main .artwork-image .artwork-meta .artwork-artists .artist span {
+            padding: 1px;
+            margin-right: 4px;
+            background-color: #555;
+            color: #fff;
+            border-radius: 0 3px 0 0; }
+      main .artwork-image .artwork-meta .more-imgs {
+        display: none;
+        position: absolute;
+        right: 0;
+        bottom: 5px; }
+        main .artwork-image .artwork-meta .more-imgs a {
+          text-decoration: none;
+          color: red;
+          font-size: 1em; }
+          main .artwork-image .artwork-meta .more-imgs a i {
+            margin-left: 4px;
+            margin-right: 4px;
+            line-height: normal;
+            vertical-align: text-baseline; }
 
 /*# sourceMappingURL=style.css.map */

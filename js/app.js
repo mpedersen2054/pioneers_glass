@@ -44,31 +44,33 @@ function manipulateData(data) {
 function insertHtml(items) {
 }
 
+$('.artwork-image').hover(imgMouseOn, imgMouseOff)
+function imgMouseOn() {
+    $(this)
+        .find($('.artwork-meta'))
+            .animate({
+                height: '+=100px',
+                borderTop: '2px solid #444'
+            }, 200)
+        .find($('.artwork-artists, .more-imgs')).show(200)
+    .end()
+        .find($('.artwork-description')).show(200)
+}
+function imgMouseOff() {
+    $(this)
+        .find($('.artwork-meta'))
+            .animate({
+                height: '-=100px',
+                borderTop: '0px solid #444'
+            }, 300)
+        .find($('.artwork-artists, .more-imgs')).hide()
+    .end()
+        .find($('.artwork-description')).hide()
+}
 
-// App Animations
+$('#dropdown-1').click(function () {
+    alert('hi')
+})
 
-$('.artwork-image').hover(
-    function() {
-        $(this)
-            .find($('.artwork-meta'))
-                .animate({
-                    height: '+=130px',
-                    borderTop: '2px solid #444'
-                }, 200)
-            .find($('.artwork-description'))
-                .show();
-
-    },
-    function() {
-        $(this)
-            .find($('.artwork-meta'))
-                .animate({
-                    height: '-=130px',
-                    borderTop: '0px solid #444'
-                }, 300)
-            .find($('.artwork-description'))
-                .hide();
-    }
-);
 
 });

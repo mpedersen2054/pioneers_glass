@@ -36,24 +36,53 @@ main
             color: #fff
             height: 32px
             width: 286px
-            border-top: 2px solid #bbb
+            border-top: 1px solid #bbb
             border-radius: 0px 0px 3px 3px
             -ms-border-radius: 0px 0px 3px 3px
             -moz-border-radius: 0px 0px 3px 3px
             -webkit-border-radius: 0px 0px 3px 3px
 
-    .artwork-title, .artwork-description
-        overflow: hidden
-        line-height: 1.4
-        padding: 1px 8px
+            .artwork-title, .artwork-description
+                overflow: hidden
+                line-height: 1.4
+                padding: 1px 8px
 
-    .artwork-description
-        font-size: 0.9em
-        display: none
-        color: #222
-        font-weight: 300
+            .artwork-title
+                h3
+                    font-size: 1.2em
+                    color: #000
+                    font-weight: 400
+                    margin-bottom: 8px
+            .artwork-description
+                font-size: 0.8em
+                display: none
+                color: #222
+                font-weight: 300
+            .artwork-artists
+                display: none
+                .artist
+                    margin-left: 10px
+                    color: #000
+                    font-size: 0.6em
+                    span
+                        padding: 1px
+                        margin-right: 4px
+                        background-color: #555
+                        color: #fff
+                        border-radius: 0 3px 0 0
+            .more-imgs
+                display: none
+                position: absolute
+                right: 0
+                bottom: 5px
+                a
+                    text-decoration: none
+                    color: red
+                    font-size: 1em
+                    i
+                        margin-left: 4px
+                        margin-right: 4px
+                        line-height: normal
+                        vertical-align: text-baseline
 
-    .artwork-title
-        font-size: 1.2em
-        color: #000
-        font-weight: 400
+
